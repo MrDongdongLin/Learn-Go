@@ -17,17 +17,17 @@ This project describes how to read a yaml file and print it to screem.
 	```
 
 where `c` is a struct object that defined by us, according to the format of yaml data. Suppose the yaml data is
-	```
-	person:
-  		name: 'Flower'
-  		age:  '25'
-	```
+```
+person:
+  	name: 'Flower'
+  	age:  '25'
+```
 then our struct must define as
-	```go
-	type Conf struct {
-		Person struct {
-			Name string `yaml:"name"`
-			Age  string `yaml:"age"`
-		}
+```go
+type Conf struct {
+	Person struct {
+		Name string `yaml:"name"`
+		Age  string `yaml:"age"`
 	}
-	```
+}
+```
