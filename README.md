@@ -17,7 +17,7 @@ This project describes how to read a yaml file and print it to screem.
 	```
 
 where `c` is a struct object that defined by us, according to the format of yaml data. Suppose the yaml data is
-	```yaml
+	```
 	person:
   		name: 'Flower'
   		age:  '25'
