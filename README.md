@@ -2,8 +2,7 @@
 This repository records some skills about Go programming.
 
 ## yaml io
-This project describes how to read a yaml file and print it to screem.
-
+This project describes how to read a yaml file and print it to screen.
 - Package need to import:
   - `io/ioutil`
   - `gopkg.in/yaml.v2`
@@ -15,8 +14,7 @@ This project describes how to read a yaml file and print it to screem.
   ```go
   err = yaml.Unmarshal(conf, &c)
   ```
-
-where `c` is a struct object that defined by us, according to the format of yaml data. Suppose the yaml data is
+where `c` is a struct object that defined according to the format of yaml data by us. Suppose yaml data is
 ```
 person:
   name: 'Flower'
