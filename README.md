@@ -35,7 +35,7 @@ type Conf struct {
 }
 ```
 
-## HttpRouter
+## [HttpRouter](https://github.com/MrDongdongLin/Learn-Go/tree/master/HttpRouter)
 HttpRouter is a lightweight high performance HTTP request router (also called multiplexer or just mux for short) for Go.
 
 ### Installation
