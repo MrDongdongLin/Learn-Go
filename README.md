@@ -1,7 +1,8 @@
 Learn-Go
 =========================
-[![Build Status](https://travis-ci.org/meolu/walle-web.svg?branch=master)](https://github.com/MrDongdongLin?tab=repositories)
-[![Packagist](https://img.shields.io/packagist/v/meolu/walle-web.svg)](https://github.com/MrDongdongLin?tab=repositories)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/MrDongdongLin/Learn-Go#learn-go)
+[![Packagist](https://img.shields.io/badge/paskagist-v1.1.0-blue.svg)](https://github.com/MrDongdongLin/Learn-Go/releases)
+[![Powerby](https://img.shields.io/badge/powerby-DongdongLin-orange.svg)](https://github.com/MrDongdongLin)
 
 This repository records some skills about Go programming.
 
