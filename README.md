@@ -1,5 +1,8 @@
 Learn-Go
 =========================
+[![Build Status](https://travis-ci.org/meolu/walle-web.svg?branch=master)](https://github.com/MrDongdongLin?tab=repositories)
+[![Packagist](https://img.shields.io/packagist/v/meolu/walle-web.svg)](https://github.com/MrDongdongLin?tab=repositories)
+
 This repository records some skills about Go programming.
 
 ## yaml io
