@@ -34,5 +34,43 @@ type Conf struct {
   }
 }
 ```
+
+## HttpRouter
+HttpRouter is a lightweight high performance HTTP request router (also called multiplexer or just mux for short) for Go.
+
+### Installation
+```go
+go get github.com/julienschmidt/httprouter
+```
+Create a new httprouter object with `New` function, and we can create request methods like `GET`, `POST` and so on. Let's see an example:
+```go
+router := httprouter.New()
+router.GET("/get/:requestid", controller.GetTaskProcess)
+router.POST("/post/:requestid", controller.PostTaskProcess)
+...
+```
+then writing methods `GetTaskProcess` and `PostTaskProcess` with a simple response respectively:
+```go
+func GetTaskProcess(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
+  fmt.Fprintf(w, "hello, %s!\n", ps.ByName("requestid"))
+}
+
+func PostTaskProcess(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
+  body, err := ioutil.ReadAll(r.Body)
+  if err != nil {
+    fmt.Fprint(w, "hello, something wrong happened for sending message to %s!\n", ps.ByName("requestid"))
+  } else {
+    fmt.Fprint(w, "Your enter is %s\n", []byte(body))
+  }
+}
+```
+At last, we use `curl` to test this project:
+```
+curl -XGET localhost:8002/get/world
+```
+then we get
+```
+hello, world
+```
 ## CHANGELOG
 [CHANGELOG](https://github.com/MrDongdongLin/Learn-Go/releases)
