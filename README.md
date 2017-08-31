@@ -1,3 +1,5 @@
+[toc]
+
 Learn-Go
 =========================
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/MrDongdongLin/Learn-Go#learn-go)
@@ -5,8 +7,6 @@ Learn-Go
 [![Powerby](https://img.shields.io/badge/powerby-DongdongLin-orange.svg)](https://github.com/MrDongdongLin)
 
 This repository records some skills about Go programming.
-
-[toc]
 
 ## [yaml io](https://github.com/MrDongdongLin/Learn-Go/tree/master/yaml%20io)
 This project describes how to read a yaml file and print it to screen.
