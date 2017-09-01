@@ -73,5 +73,16 @@ then we get
 ```
 hello, world
 ```
+
+## [gorm](https://github.com/MrDongdongLin/Learn-Go/tree/master/gorm)
+The fantastic ORM library for Golang, aims to be developer friendly.
+
+### Installation
+```go
+go get -u github.com/jinzhu/gorm
+```
+
+Ditail operations can be found [here](http://jinzhu.me/gorm/).
+
 ## CHANGELOG
 [CHANGELOG](https://github.com/MrDongdongLin/Learn-Go/releases)
