@@ -1,6 +1,6 @@
 # Learn-Go
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/MrDongdongLin/Learn-Go#learn-go)
-[![Packagist](https://img.shields.io/badge/paskagist-v1.1.0-blue.svg)](https://github.com/MrDongdongLin/Learn-Go/releases)
+[![Packagist](https://img.shields.io/badge/packgist-v1.3.0-brightgreen.svg)](https://github.com/MrDongdongLin/Learn-Go/releases)
 [![Powerby](https://img.shields.io/badge/powerby-DongdongLin-orange.svg)](https://github.com/MrDongdongLin)
 
 This repository records some skills about Go programming.
