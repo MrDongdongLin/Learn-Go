@@ -5,7 +5,7 @@
 
 This repository records some skills about Go programming.
 
-## [yaml io](https://github.com/MrDongdongLin/Learn-Go/tree/master/yaml%20io)
+## [yaml](https://github.com/MrDongdongLin/Learn-Go/tree/master/yaml)
 This project describes how to read a yaml file and print it to screen.
 - Package need to import:
   - `io/ioutil`
@@ -34,7 +34,7 @@ type Conf struct {
 }
 ```
 
-## [HttpRouter](https://github.com/MrDongdongLin/Learn-Go/tree/master/HttpRouter)
+## [httprouter](https://github.com/MrDongdongLin/Learn-Go/tree/master/httprouter)
 HttpRouter is a lightweight high performance HTTP request router (also called multiplexer or just mux for short) for Go.
 
 ### Installation
