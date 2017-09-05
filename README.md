@@ -82,5 +82,55 @@ go get -u github.com/jinzhu/gorm
 
 Ditail operations can be found [here](http://jinzhu.me/gorm/).
 
+## [redis](https://github.com/MrDongdongLin/Learn-Go/tree/master/redis)
+Here, taking the [gosexy redis](https://github.com/gosexy/redis) for example, to introduce how to use redis in golang.
+
+### Installation
+- redis
+```Shell Session
+$ wget http://download.redis.io/releases/redis-2.8.3.tar.gz
+$ tar xzf redis-2.8.3.tar.gz
+$ cd redis-2.8.3
+$ make
+$ redis-server
+```
+- redis client
+```go
+go get menteslibres.net/gosexy/redis
+```
+then import redis with
+```go
+import "menteslibres.net/gosexy/redis"
+```
+- usage
+```go
+var client *redis.Client
+
+client = redis.New()
+
+err = client.Connect(host, port)
+
+if err != nil {
+  log.Fatalf("Connect failed: %s\n", err.Error())
+  return
+}
+
+log.Println("Connected to redis-server.")
+
+log.Printf("Sending PING...\n")
+s, err = client.Ping()
+
+if err != nil {
+  log.Fatalf("Could not ping: %s\n", err.Error())
+  return
+}
+
+log.Printf("Received %s!\n", s)
+
+client.Quit()
+```
+
+### A RESTful api using httprouter and redis
+
 ## CHANGELOG
 [CHANGELOG](https://github.com/MrDongdongLin/Learn-Go/releases)
