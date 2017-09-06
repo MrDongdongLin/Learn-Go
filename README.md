@@ -132,6 +132,8 @@ client.Quit()
 
 ### A RESTful api using httprouter and redis
 
+REST (Representational State Transfer) is a uniform way of locating resources on the internet that goes beyond the boundaries of programming languages, more information about this project can be found [here](https://medium.com/code-zen/rest-apis-server-in-go-and-redis-66e9cb80a71b)
+
 ## CHANGELOG
 [CHANGELOG](https://github.com/MrDongdongLin/Learn-Go/releases)
 
