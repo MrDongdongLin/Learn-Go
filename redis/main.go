@@ -1,12 +1,16 @@
+package main
+
 import (
 	"log"
 	"net/http"
+
+	"LearnGo/redis/server"
 )
 
 func main() {
-	router := NewRouter()
-	
-	log.Fatal(http.ListenAndServe(":8080", router))
+	router := server.NewRouter()
+
+	log.Fatal(http.ListenAndServe(":8001", router))
 }
 
 func HandleError(err error) {

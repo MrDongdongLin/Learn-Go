@@ -2,6 +2,8 @@ package server
 
 import (
 	mux "github.com/julienschmidt/httprouter"
+
+	"LearnGo/redis/controller"
 )
 
 type Route struct {
@@ -18,30 +20,30 @@ var routes = Routes{
 		"Index",
 		"GET",
 		"/",
-		Index,
+		controller.Index,
 	},
 	Route{
 		"TodoIndex",
 		"GET",
 		"/todos",
-		TodoIndex,
+		controller.TodoIndex,
 	},
 	Route{
 		"TodoShow",
 		"GET",
 		"/todos/:todoId",
-		TodoShow,
+		controller.TodoShow,
 	},
 	Route{
 		"TodoCreate",
 		"POST",
 		"/todos",
-		TodoCreate,
+		controller.TodoCreate,
 	},
 	Route{
 		"TodoDownload",
 		"GET",
 		"/todos.json",
-		TodoDownload,
+		controller.TodoDownload,
 	},
 }
