@@ -68,7 +68,7 @@ At last, we use `curl` to test this project:
 curl -XGET localhost:8002/get/world
 curl -XPOST localhost:8002/post/hello
 ```
-then we can get `hello, world!` and `Your enter is hello` on the screen.
+then we can get `hello, world!` and `Your enter is hello` on the screen respectively.
 
 ## [gorm](https://github.com/MrDongdongLin/Learn-Go/tree/master/gorm)
 The fantastic ORM library for Golang, aims to be developer friendly.
