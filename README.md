@@ -66,11 +66,9 @@ func PostTaskProcess(w http.ResponseWriter, r *http.Request, ps httprouter.Param
 At last, we use `curl` to test this project:
 ```
 curl -XGET localhost:8002/get/world
+curl -XPOST localhost:8002/post/hello
 ```
-then we get
-```
-hello, world
-```
+then we can get `hello, world!` and `Your enter is hello` on the screen.
 
 ## [gorm](https://github.com/MrDongdongLin/Learn-Go/tree/master/gorm)
 The fantastic ORM library for Golang, aims to be developer friendly.
@@ -88,11 +86,11 @@ Here, taking the [gosexy redis](https://github.com/gosexy/redis) for example, to
 ### Installation
 - redis
 ```Shell Session
-$ wget http://download.redis.io/releases/redis-2.8.3.tar.gz
-$ tar xzf redis-2.8.3.tar.gz
-$ cd redis-2.8.3
-$ make
-$ redis-server
+wget http://download.redis.io/releases/redis-2.8.3.tar.gz
+tar xzf redis-2.8.3.tar.gz
+cd redis-2.8.3
+make
+./redis-server
 ```
 - redis client
 ```go
@@ -105,28 +103,20 @@ import "menteslibres.net/gosexy/redis"
 - usage
 ```go
 var client *redis.Client
-
 client = redis.New()
-
 err = client.Connect(host, port)
-
 if err != nil {
   log.Fatalf("Connect failed: %s\n", err.Error())
   return
 }
-
 log.Println("Connected to redis-server.")
-
 log.Printf("Sending PING...\n")
 s, err = client.Ping()
-
 if err != nil {
   log.Fatalf("Could not ping: %s\n", err.Error())
   return
 }
-
 log.Printf("Received %s!\n", s)
-
 client.Quit()
 ```
 
